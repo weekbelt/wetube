@@ -17,7 +17,7 @@ export const videoDetail = (req, res) =>
   res.render("videoDetail", { pageTitle: "Video Detail" });
 
 export const editVideo = (req, res) =>
-  res.redner("editVideo", { pageTitle: "Edit Video" });
+  res.render("editVideo", { pageTitle: "Edit Video" });
 
 export const deleteVideo = (req, res) =>
   res.render("deleteVideo", { pageTitle: "Delete Video" });
