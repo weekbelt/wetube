@@ -5,7 +5,9 @@
   "main": "init.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node init.js"
+    "dev:server": "nodemon --exec babel-node init.js",
+    "dev:assets": "WEBPACK_ENV=development webpack",
+    "build:assets": "WEBPACK_ENV=production webpack"
   },
   "author": "Weekbelt",
   "license": "ISC",
@@ -18,11 +20,14 @@
     "core-js": "^3.6.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "helmet": "^3.23.3",
     "mongoose": "^5.10.9",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
-    "pug": "^3.0.0"
+    "pug": "^3.0.0",
+    "webpack": "^5.1.0",
+    "webpack-cli": "^4.0.0"
   },
   "devDependencies": {
     "eslint": "^7.11.0",
