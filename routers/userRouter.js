@@ -1,9 +1,9 @@
 import express from "express";
 import routes from "../routes";
 import {
+  userDetail,
   editProfile,
   changePassword,
-  userDetail,
 } from "../controllers/userController";
 import { onlyPrivate } from "../middlewares";
 
